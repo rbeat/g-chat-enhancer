@@ -1,3 +1,13 @@
+//  =======================================================
+//  File:       replyButton.js
+//  Version:	v.0.1 (Initial Commit)
+//  Author:     Rodion "R.Beat" Grinberg (https://rbeat.gq)
+//  Date:       14/11/2020
+//  Desc:	Reply button functionallity in Web Version
+//		of Google Chat. To test in Chrome Console.
+//  =======================================================
+
+
 var i = 0;
 var replyButtonElement = "<div class=\"zgMAae orLAid magicReplyButton\" data-focus-button-on-close=\"true\"><div role=\"button\" jscontroller=\"VXdfxd\" jsaction=\"focus:AHmuwe; blur:O22p3e;\" jsshadow=\"\" jsname=\"JlEEbd\" class=\"mUbCce n8aqX M9Bg4d\" aria-label=\"Reply\" aria-disabled=\"false\" tabindex=\"0\" data-tooltip=\"Reply\" data-tooltip-vertical-offset=\"-12\" data-tooltip-horizontal-offset=\"0\"><div class=\"\"></div><span jsslot=\"\" class=\"xjKiLb \"><span class=\"\" style=\"top: -10px\"><svg viewBox=\"0 0 24 24\" class=\" f8lxbf UVO9qc ZnfIwf\"><path d=\"M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z\"></path></svg></span></span></div></div>"
 replyButtonElement = new DOMParser().parseFromString(replyButtonElement, "text/html").body.firstElementChild;
@@ -22,7 +32,5 @@ for (i = 0; i < replyButtons.length; i++) {
 }
 
 function passMessage(message) {
-	console.log("Text: \"" + message + "\"");
 	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = message;
-
 }
