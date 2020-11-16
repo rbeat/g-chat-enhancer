@@ -1,6 +1,6 @@
 //  =======================================================
 //  File:       replyButton.js
-//  Version:	v.0.1.1
+//  Version:	v.0.1.2
 //  Author:     Rodion "R.Beat" Grinberg (https://rbeat.gq)
 //  Date:       14/11/2020
 //  Desc:	Reply button functionallity in Web Version
@@ -13,8 +13,9 @@ var replyButtonElement = "<div class=\"zgMAae orLAid magicReplyButton\" data-foc
 replyButtonElement = new DOMParser().parseFromString(replyButtonElement, "text/html").body.firstElementChild;
 var actionBubbles = document.getElementsByClassName("eWw5ab");
 for (i = 0; i < actionBubbles.length; i++) {
+    var duplicate = replyButtonElement.cloneNode(true);
 	if (actionBubbles[i].contains(replyButtonElement) == false) {
-		actionBubbles[i].appendChild(replyButtonElement);
+		actionBubbles[i].appendChild(duplicate);
 	}
 }
 var replyButtons = document.getElementsByClassName("magicReplyButton");
