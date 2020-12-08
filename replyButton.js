@@ -1,6 +1,6 @@
 //  =======================================================
 //  File:       replyButton.js
-//  Version:	v.0.1.2
+//  Version:	v.0.1.3
 //  Author:     Rodion "R.Beat" Grinberg (https://rbeat.gq)
 //  Date:       14/11/2020
 //  Desc:	Reply button functionallity in Web Version
@@ -34,6 +34,6 @@ for (i = 0; i < replyButtons.length; i++) {
 }
 
 function passMessage(message, author) {
-	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = "~~~ " + message + " ~~~\n@" + author;
+	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = "``` " + message + " ```\n@" + author;
     	document.getElementsByClassName("Ct5IYc qs41qe")[0].innerText = "";
 }
