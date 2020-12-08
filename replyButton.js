@@ -2,7 +2,6 @@
 //  File:       replyButton.js
 //  Version:	v.0.1.3
 //  Author:     Rodion "R.Beat" Grinberg (https://rbeat.gq)
-//  Date:       14/11/2020
 //  Desc:	Reply button functionallity in Web Version
 //		of Google Chat. To test in Chrome Console.
 //  =======================================================
