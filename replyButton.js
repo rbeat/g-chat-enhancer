@@ -33,6 +33,9 @@ for (i = 0; i < replyButtons.length; i++) {
 }
 
 function passMessage(message, author) {
+	if (message.includes("\n,\n")){
+		message = message.substring(0,message.indexOf("\n,\n"));
+	}
 	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = "``` " + message + " ```\n";
     	document.getElementsByClassName("Ct5IYc qs41qe")[0].innerText = "";
 }
