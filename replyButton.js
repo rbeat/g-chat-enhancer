@@ -33,6 +33,6 @@ for (i = 0; i < replyButtons.length; i++) {
 }
 
 function passMessage(message, author) {
-	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = "``` " + message + " ```\n@" + author;
+	document.getElementsByClassName("oAzRtb krjOGe")[0].innerText = "``` " + message + " ```\n";
     	document.getElementsByClassName("Ct5IYc qs41qe")[0].innerText = "";
 }
