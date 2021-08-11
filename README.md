@@ -1,4 +1,4 @@
-# g-chat-enhancer - Google Chat Enhancer
+# g-chat-enhancer - Google Chat Enhancer [PROJECT ABANDONED]
 
 Google Chat Enhancer is a set of tools to make Google (Hangouts) Chat web version better.
 
